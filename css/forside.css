@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header1 {
+  height: 100px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+.divheader {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.headerh1 {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+li a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li a:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.sec1 {
+  background-image: url("../img/pexels-pixabay-260259.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.frontdiv {
+  width: 60%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.425);
+  display: flex;
+  margin-top: 300px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  color: #679436;
+}
+
+.aboutus {
+  color: white;
+  width: 500px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.donate {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #427aa1;
+  letter-spacing: 0.1rem;
+}
+
+.donate:hover {
+  cursor: pointer;
+  background-color: #4279a179;
+  transition: 0.2s;
+  color: white;
+}
+
+@media only screen and (max-width: 375px) {
+ body{
+  width: 375px;
+ }
+
+   .header1{
+    position: absolute;
+    margin-top: 10px;
+  }
+
+  .divheader{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+ 
+ 
+  ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+ }
+
+ .frontdiv{
+  width: 375px;
+ }
+
+ .aboutus{
+  width: 375px;
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  text-align: start;
+ }
+
+ 
+}
+
+

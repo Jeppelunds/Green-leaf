@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header1 {
+  height: 100px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+.divheader {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.headerh1 {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+li a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li a:hover {
+  cursor: pointer;
+  color: #679436;
+  transition: 0.2s;
+}
+
+span {
+  color: #679436;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/36869-9-green-leaves-transparent-background2.png");
+}
+
+p {
+  font-size: 22px;
+  width: 800px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  margin-top: 30px;
+    animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+@media only screen and (max-width: 375px){
+   body{
+  width: 375px;
+ }
+
+   .header1{
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .divheader{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+ 
+ 
+  ul{
+    position: relative;
+      display: flex;
+    flex-direction: row;
+   gap: 20px;
+ }
+  
+  
+  body{
+    width: 375px;
+  }
+  section{
+    width: 100vw;
+    display: flex;
+    padding-top: 20px;
+    align-items: flex-start;
+  }
+
+  p{
+    width: 375px;
+    font-size: 16px;
+    padding: 10px
+  }
+
+  .ourgoal{
+    padding-left: 10px;
+  }
+
+
+  .header1{
+    position: relative;
+  }
+
+}

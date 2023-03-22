@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>greenleaf</title>
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <header class="header1">
+      <div class="divheader">
+        <h1 class="headerh1">Green<span>leaf</span></h1>
+        <ul>
+          <li><a href="forside.html">Forside</a></li>
+          <li><a href="omos.html">Om os</a></li>
+          <li><a href="gallery.html">Galleri</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="test2">
+        <div class="test">
+        <p>
+         GreenLeaf forsøger i samarbejde med greenpeace og Save the trees, at
+          flytte naturen ind i storbyerne.<br /><br />
+          Samarbejdet skal højne vores bevisthed, om betonjunglens skadelige
+          virkning på vores medmenneskelighed, og skabe et naturligt miljø i både
+          bylivet og vores hjerter.<br /><br />I skovens dybe stille ro... Siger
+          ordsproget. Byen der aldrig sover... Er sandheden. Mennesker er ikke
+          skabt til et liv uden natur, men vi kan heller ikke flytte os alle ud i
+          de få skove der er tilbage på planeten. Vores løsning er at få naturen
+          ind i vores byer. Hver gang en bygning saniteres og jævnes, vil vi kæmpe
+          for at tilbagekræve landstykket til naturen.<br /><br />Vi kæmper ikke
+          med protest og magt, men med økonomi. Vi køber jordstykket af bystyret
+          og etablerer skov på området.Kom og vær en del af fremtiden. Hjælp os
+          med at plante skoven lige udenfor din dør, lad os alle se årstidernes
+          skiften, og solens opbrudte livslys, gennem det smukke træs skyggefulde
+          grene.<br /><br />Plant et træ i byen for din fremtid. Støt vores sag
+          med din arbejdskraft, eller hjælp os med midlerne til at realiserer
+          drømmen.
+        </p>
+        </div>
+        <div class="slideshow-container">
+          <h1 class="projekt">Nogle af vores projektor</h1>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/pexels-david-yu-9283726 (1).jpg" style="width: 100%" />
+            <div class="text">Vores project i Guatemala</div>
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="img/pexels-adrien-olichon-3884485.jpg"
+              style="width: 100%"
+            />
+            <div class="text">20/07-19 Færdige project i downtown New York</div>
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="img/pexels-timothy-huliselan-11818456.jpg"
+              style="width: 100%"
+            />
+            <div class="text">Grund er opkøbt i london</div>
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+  
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+  
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+  
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+  
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+  
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
